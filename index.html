@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&family=Exo+2:wght@300&family=Exo:wght@500&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: black;
+            color: white;
+            margin: 2% 10%;
+        }
+
+        main header{
+            text-align: center;
+            font-family: 'Alegreya Sans SC';
+            font-size: 50px;
+            margin-bottom: 45px;
+        }
+
+        main section {
+            display: grid;
+            grid-template-columns: 2px 2px;
+            grid-column-gap: 68%;
+            font-family: 'Exo';
+            /* max-width: 613px; */
+        }
+
+        main section img{
+            height: 350px;
+            width: 350px;
+        }
+
+        #terra img{
+            border: 10px solid aqua;
+            border-radius: 50px;
+        }
+
+        /* #saturno img{
+            position: relative;
+            height: 350px;
+            width: 650px;
+            margin-right: -100px;
+        } */
+
+        section h1{
+            /* border: 1px solid red; */
+            width: 350px;
+            text-align: center;
+            gap: 80px;
+            font-size: 25px;
+        }
+
+        .nome-planeta{
+            width: 350px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        @media (min-height: 613px){
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>O Sistema Solar ☀️</h1>
+        </header>
+        <section>
+            <div class="planetas-rochosos">
+                <h1>Planetas rochosos</h1>
+                <div id="mercurio">
+                    <img src="./img/mercury.jpg" alt="">
+                    <p class="nome-planeta">Mercúrio</p>
+                </div>
+                <div id="venus">
+                    <img src="./img/venus.jpg" alt="">
+                    <p class="nome-planeta">Vênus</p>
+                </div>
+                <div id="terra">
+                    <img src="./img/earth.jpg" alt="">
+                    <p class="nome-planeta">Terra</p>
+                </div>
+                <div id="marte">
+                    <img src="./img/mars.jpg" alt="">
+                    <p class="nome-planeta">Marte</p>
+                </div>
+            </div>
+            <div class="planetas-gasosos">
+                <h1>Planetas gasosos</h1>
+                <div id="jupiter">
+                    <img src="./img/jupiter.jpg" alt="">
+                    <p class="nome-planeta">Júpiter</p>
+                </div>
+                <div id="saturno">
+                    <img src="./img/saturn.jpg" alt="">
+                    <p class="nome-planeta">Saturno</p>
+                </div>
+                <div id="urano">
+                    <img src="./img/uranus.jpg" alt="">
+                    <p class="nome-planeta">Urano</p>
+                </div>
+                <div id="netuno">
+                    <img src="./img/neptune.jpg" alt="">
+                    <p class="nome-planeta">Netuno</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+</html>
